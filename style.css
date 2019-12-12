@@ -9,7 +9,8 @@ body {
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 main {
-  max-width: 375px;
+  max-width: 100%;
+  width: 375px;
   margin: auto;
 }
 
@@ -52,6 +53,7 @@ form {
   padding-bottom: 1rem;
   margin-bottom: 3rem;
   display: flex;
+  position: relative;
 }
 
 .email {
@@ -85,25 +87,22 @@ form {
 
 
 
-
-
-
-
-.input-error {
-  border: 1px solid hsl(0, 100%, 74%) !important;
+.input-err {
+  border: 1px solid hsl(0, 93%, 68%) !important;
   background-image: url(images/icon-error.svg);
   background-repeat: no-repeat;
-  background-position: right 5% center;
+  background-position: right 20% center;
 }
 
 .err-msg {
   display: none;
-  color: hsl(0, 100%, 74%);
-  font-size: .7rem;
+  color: hsl(354, 100%, 66%);
+  font-size: .8rem;
   font-style: italic;
-  margin-left: auto;
   font-weight: 500;
-  margin-top: -15px;
+  position: absolute;
+  top: 70%;
+  left: 20px;
 }
 
 .err-msg-show {
