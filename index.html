@@ -10,32 +10,34 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <main>
-    <div class="container">
-      <img src="images/logo.svg" alt="logo" class="logo">
-    </div>
-    <picture>
-      <!-- <source srcset="images/hero-desktop.jpg" media="(min-width: 376px)"> -->
-      <source srcset="images/hero-tablet.jpg" media="(min-width: 376px)">
-      <img srcset="images/hero-mobile.jpg" alt="hero" class="hero">
-    </picture>
-    <div class="container">
-      <h1><span>WE'RE</span><br />COMING<br />SOON</h1>
-      <p>Hello fellow shoppers! We're currently building our new fashion store. 
-        Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form id="form">
-          <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter email address" class="email" required>
-          <p class="err-msg" id="email-err"></p>
-          <input type="submit" aria-valuetext="submit" value="" id="submit" class="submit">
-        </form>
-    </div>
-  </main>
-  
+  <div class="wrapper">
+    <main>
+      <div class="container">
+        <img src="images/logo.svg" alt="logo" class="logo">
+      </div>
+      <picture>
+        <source srcset="images/hero-tablet.jpg" media="(min-width: 376px)">
+        <img srcset="images/hero-mobile.jpg" alt="hero" class="hero">
+      </picture>
+      <div class="container">
+        <h1><span>WE'RE</span><br />COMING<br />SOON</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          <form id="form">
+            <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter email address" class="email" required>
+            <p class="err-msg" id="email-err"></p>
+            <input type="submit" aria-valuetext="submit" value="" id="submit" class="submit">
+          </form>
+      </div>
+    </main>
+    <img src="images/hero-desktop.jpg" alt="hero picture" class="hero-lg">
+    
+  </div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

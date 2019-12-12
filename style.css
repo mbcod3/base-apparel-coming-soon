@@ -25,6 +25,7 @@ main {
   margin-bottom: 2rem;
 }
 
+
 .container {
   padding-left: 40px;
   padding-right: 40px;
@@ -63,7 +64,6 @@ form {
 .email {
   flex:  1;
   outline: none;
-  border: none;
   border: 1px solid hsla(0, 8%, 56%, 0.459);
   padding: 15px 25px;
   border-radius: 30px;
@@ -105,11 +105,63 @@ form {
   }
 }
 
+.hero-lg {
+  display: none;
+}
+
+@media (min-width: 992px) {
+
+  body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+  }
+  
+  main {
+    background: url(images/bg-pattern-desktop.svg);
+    margin: 0;
+    max-width: 830px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-lg {
+    display: block;
+    margin: 0;
+    max-width: 50vw;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  h1, 
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .err-msg {
+    font-size: 1rem !important;
+  }
+
+}
+
+
 .input-err {
   border: 1px solid hsl(0, 93%, 68%) !important;
   background-image: url(images/icon-error.svg);
   background-repeat: no-repeat;
-  background-position: right 20% center;
+  background-position: right 10% center;
+  border-right: none !important;
 }
 
 .err-msg {
